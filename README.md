@@ -1,11 +1,12 @@
-# Blue Ridge Septic Pros — Lead-Gen Site
+# Western NC Septic — Lead-Gen Site
 
 A static, config-driven, SEO-first lead-gen website for **septic pumping, repair & inspections
 across Western North Carolina**. Built from [`../SPEC.md`](../SPEC.md) (the single source of truth)
 using Astro 5 — no database, no server runtime, no client framework. Output is plain static
 HTML/CSS for a CDN. Built from `../sa-mobile-brake/`.
 
-> **Status:** placeholder business identity (company name, phone `(828) 555-0182`, email, domain)
+> **Status:** placeholder business identity (company name, phone `(828) 555-0182`, email) on the
+> final domain `westernncseptic.com`
 > + free-licensed placeholder septic photos. It builds clean and is ready to launch once you swap in
 > the real business details, real job photos, and a form backend — **do not edit `src/pages`,
 > `src/layouts`, `src/components`, or `src/lib` to rebrand.** The answer is almost always in
@@ -38,13 +39,14 @@ HTML/CSS for a CDN. Built from `../sa-mobile-brake/`.
 
 | Setting | Value |
 |---|---|
-| Company | *Blue Ridge Septic Pros* (placeholder) |
+| Company | *Western NC Septic* (placeholder) |
 | Region | Western North Carolina |
 | Cities (11) | Asheville, Hendersonville, Waynesville, Black Mountain, Weaverville, Fletcher, Arden, Brevard, Marion, Burnsville, Sylva |
 | Services (7) | `septic-services` (hubOnly catch-all) + `septic-tank-pumping`, `septic-tank-cleaning`, `septic-system-repair`, `septic-inspections`, `drain-field-repair`, `emergency-septic-service` (emergency) |
 | Matrix services | 6 (→ 66 combo pages, all `noindex` + out of sitemap) |
 | Form backend | **Call-only** (`formEndpoint=""`) — wire to Web3Forms / Formspree / a Worker later |
-| Phone / email / domain | Placeholders (`(828) 555-0182`, `blueridgesepticpros.com`) — replace before launch |
+| Domain | **westernncseptic.com** (final) — set in `site.ts` `url` + `astro.config.mjs` `site` |
+| Phone / email | Placeholders (`(828) 555-0182`, `service@westernncseptic.com`) — replace before launch |
 | Design | Same base as `sa-mobile-brake`, with the accent shifted from glass-blue to a service green (navy bands + green + white) |
 
 ---

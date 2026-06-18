@@ -32,14 +32,14 @@ export interface SiteConfig {
 }
 
 export const SITE: SiteConfig = {
-  company: 'Blue Ridge Septic Pros',
+  company: 'Western NC Septic',
   tagline: 'Septic Pumping, Repair & Inspections',
   trade: 'septic service',
   phone: '+18285550182', // PLACEHOLDER — replace with real dialable number
   phoneDisplay: '(828) 555-0182', // PLACEHOLDER
-  email: 'service@blueridgesepticpros.com', // PLACEHOLDER local-part — confirm the real inbox
+  email: 'service@westernncseptic.com', // PLACEHOLDER local-part — confirm the real inbox
   region: 'Western North Carolina',
-  url: 'https://blueridgesepticpros.com', // real domain — keep in sync with astro.config.mjs
+  url: 'https://westernncseptic.com', // real domain — keep in sync with astro.config.mjs
   // Call-only for now: empty endpoint disables form submission and shows an on-page
   // "we'll call you back" acknowledgement without sending anything. Wire a backend later
   // (Web3Forms endpoint+key, Formspree endpoint, or a Worker URL) — see SPEC §8.
