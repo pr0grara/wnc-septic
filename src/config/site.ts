@@ -40,11 +40,12 @@ export const SITE: SiteConfig = {
   email: 'service@westernncseptic.com', // PLACEHOLDER local-part — confirm the real inbox
   region: 'Western North Carolina',
   url: 'https://westernncseptic.com', // real domain — keep in sync with astro.config.mjs
-  // Call-only for now: empty endpoint disables form submission and shows an on-page
-  // "we'll call you back" acknowledgement without sending anything. Wire a backend later
-  // (Web3Forms endpoint+key, Formspree endpoint, or a Worker URL) — see SPEC §8.
-  formEndpoint: '',
-  formAccessKey: '',
+  // Web3Forms backend → routes submissions to the email registered with the access key.
+  // To route leads to azbaghda@gmail.com: go to https://web3forms.com, enter azbaghda@gmail.com,
+  // and paste the emailed access key below. The form stays in safe call-only mode until the
+  // key is set (the endpoint is ignored without it), so deploying without a key won't break it.
+  formEndpoint: 'https://api.web3forms.com/submit',
+  formAccessKey: 'e3cc242b-9bf1-4322-af8a-6f64a8e780ac', // Web3Forms → azbaghda@gmail.com
   mapEmbedSrc: '',
   priceRange: '$$',
   // No reviews wired up yet. Leave blank until real, verifiable reviews exist.
