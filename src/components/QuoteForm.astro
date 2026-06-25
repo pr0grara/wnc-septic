@@ -69,11 +69,9 @@ const activeEndpoint =
       <input id="lf-photo" name="photo" type="file" accept="image/*" />
     </div>
 
-    <p class="sms-consent muted">
-      By submitting, you agree to receive SMS text messages from {SITE.company} about your request
-      (callbacks, quotes, and appointment updates). Msg &amp; data rates may apply. Msg frequency
-      varies. Reply STOP to opt out, HELP for help. See our <a href="/privacy">Privacy Policy</a>
-      {' '}and <a href="/terms">Terms</a>.
+    <p class="consent-note muted">
+      By submitting, you agree that {SITE.company} may contact you by phone or email about your
+      request. See our <a href="/privacy">Privacy Policy</a>.
     </p>
 
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="lf-submit">
@@ -95,7 +93,7 @@ const activeEndpoint =
     margin: 14px 0 0;
     text-align: center;
   }
-  .sms-consent {
+  .consent-note {
     font-size: 0.78rem;
     line-height: 1.45;
     margin: 4px 0 14px;
