@@ -35,8 +35,8 @@ export const SITE: SiteConfig = {
   company: 'Western NC Septic',
   tagline: 'Septic Pumping, Repair & Inspections',
   trade: 'septic service',
-  phone: '+18285550182', // PLACEHOLDER — replace with real dialable number
-  phoneDisplay: '(828) 555-0182', // PLACEHOLDER
+  phone: '+18285746377', // Western NC Septic — Asheville (828)
+  phoneDisplay: '(828) 574-6377',
   email: 'service@westernncseptic.com', // PLACEHOLDER local-part — confirm the real inbox
   region: 'Western North Carolina',
   url: 'https://westernncseptic.com', // real domain — keep in sync with astro.config.mjs
