@@ -3,6 +3,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import QuoteForm from '@components/QuoteForm.astro';
 import FaqSection from '@components/FaqSection.astro';
 import CityLinks from '@components/CityLinks.astro';
+import RelatedServices from '@components/RelatedServices.astro';
 import FinalCta from '@components/FinalCta.astro';
 import { SERVICES, type Service } from '@config/services';
 import { SITE, tel } from '@config/site';
@@ -88,6 +89,11 @@ if (faqLd) jsonLd.push(faqLd);
       <CityLinks service={service} title={`${service.short} by Town`} sub={`Local ${service.short.toLowerCase()} pages for every community we serve.`} />
     )
   }
+
+  <!-- EXP-001: sibling-hub internal links w/ exact-match anchors (see ONPAGE-EXPERIMENTS.md) -->
+  <div class="section-soft">
+    <RelatedServices current={service} />
+  </div>
 
   <FinalCta heading={`Need ${service.short} in ${SITE.region}?`} />
 </BaseLayout>
