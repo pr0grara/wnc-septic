@@ -214,7 +214,7 @@ export const CITIES: City[] = [
       },
       {
         q: 'How often should an older farm system be pumped?',
-        a: 'Generally every three to five years, but older and undersized tanks common around Weaverville often need it sooner. If you cannot remember the last pump, it is overdue. We will look at the tank and your household and set a realistic schedule.',
+        a: 'Generally every three to five years, but older and undersized tanks common around Weaverville often need it sooner. If you cannot remember the last pump, it is probably overdue. We will look at the tank and your household and set a realistic schedule.',
       },
       {
         q: 'I bought a new build outside Weaverville — do I still need to think about septic?',
