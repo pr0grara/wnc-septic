@@ -303,7 +303,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: 'Can a failing drain field be saved, or does it have to be replaced?',
-        a: 'It depends on why it is failing. If it is upstream — solids from an unpumped tank, a dead pump, a broken line — fixing that and resting the field can restore it. If the soil in the field is fully clogged with solids, it usually has to be repaired or rebuilt. We give you the honest call instead of defaulting to the most expensive option.',
+        a: 'It depends on why it is failing. If it is upstream — solids from an unpumped tank, a dead pump, a broken line — fixing that and resting the field can restore it. If the soil in the field is fully clogged with solids, it usually needs field line repair, or in the worst cases a full drain field replacement. We give you the honest call instead of defaulting to the most expensive option.',
       },
       {
         q: 'How do I keep my drain field from failing?',
