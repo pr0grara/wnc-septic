@@ -28,6 +28,8 @@ export interface Service {
   slug: string;
   name: string; // Full service name, e.g. "Septic Tank Pumping"
   short: string; // Short label for nav, cards, breadcrumbs
+  titleTag?: string; // optional <title> override (else `${name} in ${region} | ${company}`)
+  h1?: string; // optional hub H1 override (else `${name} in ${region}`)
   blurb: string; // One-line summary
   description: string; // Intro paragraph (hub + city combo pages)
   sections: ServiceSection[]; // Deeper authority sections, rendered on the hub page
@@ -269,11 +271,13 @@ export const SERVICES: Service[] = [
   },
   {
     slug: 'drain-field-repair',
-    name: 'Drain Field Repair',
+    name: 'Septic Drain Field & Field Line Repair',
     short: 'Drain Field',
-    blurb: 'Soggy yard, standing water, or odors over the field? We diagnose a struggling drain field and fix what we can.',
+    titleTag: 'Septic Drain Field & Field Line Repair in Hendersonville & Fletcher, NC | Western NC Septic',
+    h1: 'Septic Drain Field & Field Line Repair in Hendersonville & Fletcher, NC',
+    blurb: 'Failed or saturated drain field in Hendersonville & Fletcher, NC? Soggy yard, standing water, or odors over the lines — we diagnose the real cause and give you a straight repair-vs-replace answer.',
     description:
-      'The drain field — also called the leach field — is where treated water from the tank soaks back into the ground, and it is both the most important and the most expensive part of a septic system. When a field starts to fail you see it in the yard: spongy or standing water over the lines, lush green grass in strips, sewage odor outside, slow drains in the house, and eventually backups. We diagnose and repair drain field problems across Western North Carolina. A lot of field trouble is not a dead field at all — it is a tank that overflowed solids into the lines, a failed pump, a crushed or root-clogged line, or simply ground saturated from our heavy mountain rains. We find the real cause, and where the field itself is the problem we repair, restore, or rebuild the failed lines rather than assuming the whole thing has to be torn out.',
+      'Septic drain field and field line repair in Hendersonville & Fletcher, NC starts with an honest diagnosis, not a tear-out. The drain field — also called the leach field or field lines — is where treated water from the tank soaks back into the ground, and it is both the most important and the most expensive part of a septic system. When a field fails or the ground stays saturated you see it in the yard: spongy or standing water over the lines, lush green grass in strips, sewage odor outside, slow drains in the house, and eventually backups. We diagnose and repair drain field and field line problems across Hendersonville, Fletcher, and the rest of Western North Carolina. A lot of field trouble is not a dead field at all — it is a tank that overflowed solids into the lines, a failed pump, a crushed or root-clogged field line, or simply ground saturated from our heavy mountain rains. We find the real cause, and where the field itself is the problem we repair, restore, or rebuild the failed lines rather than assuming the whole thing has to be torn out — so the repair-vs-replace call is an honest one.',
     sections: [
       {
         h: 'Reading the signs in the yard',

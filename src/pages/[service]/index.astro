@@ -22,7 +22,7 @@ const { service } = Astro.props;
 
 const heroUrl = await getHeroUrl(service.image);
 
-const title = `${service.name} in ${SITE.region} | ${SITE.company}`;
+const title = service.titleTag ?? `${service.name} in ${SITE.region} | ${SITE.company}`;
 const description = `${service.blurb} ${SITE.company} — local ${SITE.trade} across ${SITE.region}. Call ${SITE.phoneDisplay}.`;
 
 const jsonLd = [
@@ -44,7 +44,7 @@ if (faqLd) jsonLd.push(faqLd);
         <a href="/">Home</a><span>/</span>{service.short}
       </nav>
       {service.emergency && <span class="badge-em">Emergency Service</span>}
-      <h1>{service.name} in {SITE.region}</h1>
+      <h1>{service.h1 ?? `${service.name} in ${SITE.region}`}</h1>
       <p>{service.blurb}</p>
       <div class="hero-actions">
         <a class="btn btn-call btn-lg" href={tel()}>📞 Call {SITE.phoneDisplay}</a>
